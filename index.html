@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let firstName = prompt("გთხოვთ შეიყვანოთ თქვენი სახელი:");
+      let lastName = prompt("გთხოვთ შეიყვანოთ თქვენი გვარი:");
+      let birthYear = prompt("გთხოვთ შეიყვანოთ თქვენი დაბადების წელი:");
+      let misamarti = prompt("გთხოვთ შეიყვანოთ თქვენი საცხოვრებელი ადგილი:");
+      let currentYear = new Date().getFullYear(); 
+      let age = currentYear - birthYear;
+      alert(
+            "გამარჯობა " + firstName + " " + lastName + 
+            ", მიხარია რომ უკვე " + misamarti+" -ში ცხოვრობ და შენ " + age + "  წლის ხარ."
+        );
+    </script>
+  </body>
+</html>
